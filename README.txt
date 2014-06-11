@@ -4,7 +4,8 @@ the only difference being that this version is written with Python and can there
 
 To get started:
 1. Unzip/Extract the files within this folder to your computer
-2. If you do not have the latest version of Python installed, please install it from http://www.python.org/download
+2. If you do not have the latest version of Python installed, please install it from
+   http://www.python.org/download
 3. Open the file named "zork.py"
 4. Have Fun!
 
