@@ -9,24 +9,31 @@ while loop == 3:
 
 	first = raw_input(str("What do you do? "))
 	if first.lower() == ("take mailbox"):
+		print("---------------------------------------------------------")
 		print("You cannot be serious.")
 		loop = 4
 	if first.lower() == ("open mailbox"):
+		print("---------------------------------------------------------")
 		print("Opening the small mailbox reveals a leaflet.")
 		loop = 4
 	if first.lower() == ("go east"):
+		print("---------------------------------------------------------")
 		print("The door is boarded and you cannot remove the boards.")
 		loop = 4
 	if first.lower() == ("open door"):
+		print("---------------------------------------------------------")
 		print("The door cannot be opened.")
 		loop = 4
 	if first.lower() == ("take boards"):
+		print("---------------------------------------------------------")
 		print("The boards are securely fastened.")
 		loop = 4
 	if first.lower() == ("look at house"):
+		print("---------------------------------------------------------")
 		print("The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.")
 		loop = 4
 	if first.lower() == ("read leaflet"):
+		print("---------------------------------------------------------")
 		print("Welcome to the Unofficial Python Version of Zork. Your mission is to find a Jade Statue.")
 		loop = 4
 	if first.lower() == ("go southwest"):
@@ -39,26 +46,33 @@ while loop == 3:
 			print("There is a Small Mailbox.")
 			second = raw_input(str("What do you do? "))
 		if second.lower() == ("take mailbox"):
+			print("---------------------------------------------------------")
 			print("It is securely anchored.")
 			hello = 2
 		if second.lower() == ("open mailbox"):
+			print("---------------------------------------------------------")
 			print("Opening the small mailbox reveals a leaflet.")
 			hello = 2
 		if second.lower() == ("go east"):
+			print("---------------------------------------------------------")
 			print("The door is boarded and you cannot remove the boards.")
 			hello = 2
 		if second.lower() == ("open door"):
+			print("---------------------------------------------------------")
 			print("The door cannot be opened.")
 			hello = 2
 		if second.lower() == ("take boards"):
+			print("---------------------------------------------------------")
 			print("The boards are securely fastened.")
 			hello = 2
 		if second.lower() == ("look at house"):
+			print("---------------------------------------------------------")
 			print("The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.")
 			hello = 2
 		if second.lower() == ("go southwest"):
 			loop = 8
 		if second.lower() == ("read leaflet"):
+			print("---------------------------------------------------------")
 			print("Welcome to the Unofficial Python Version of Zork. Your mission is to find a Jade Statue.")
 			loop = 4
 		if second.lower() == ("go southwest"):
@@ -69,12 +83,15 @@ while loop == 3:
 			print("This is a forest, with trees in all directions. To the east, there appears to be sunlight.")
 			forest_inp = raw_input(str("What do you do? "))
 		if forest_inp.lower() == ("go west"):
+			print("---------------------------------------------------------")
 			print("You would need a machete to go further west.")
 			loop = 8
 		if forest_inp.lower() == ("go north"):
+			print("---------------------------------------------------------")
 			print("The forest becomes inpenetrable to the North.")
 			loop = 8
 		if forest_inp.lower() == ("go south"):
+			print("---------------------------------------------------------")
 			print("Storm-tossed trees block your way.")
 			loop = 8
 		if forest_inp.lower() == ("go east"):
@@ -86,6 +103,7 @@ while loop == 3:
 			print("There is an open grating, descending into darkness.")
 			grating_inp = raw_input(str("What do you do? "))
 		if grating_inp.lower() == ("go south"):
+			print("---------------------------------------------------------")
 			print("You see a large ogre and turn around.")
 			loop = 9
 		if grating_inp.lower() == ("descend grating"):
@@ -94,9 +112,22 @@ while loop == 3:
 		if loop == 10:
 			print("---------------------------------------------------------")
 			print("You are in a tiny cave with a dark, forbidding staircase leading down.")
+			print("There is a skeleton of a human male in one corner.")
 			cave_inp = raw_input(str("What do you do? "))
 		if cave_inp.lower() == ("descend staircase"):
 			loop = 11
+		if cave_inp.lower() == ("take skeleton"):
+			print("---------------------------------------------------------")
+			print("Why would you do that? Are you some sort of sicko?")
+			loop = 10
+		if cave_inp.lower() == ("smash skeleton"):
+			print("---------------------------------------------------------")
+			print("Sick person. Have some respect mate.")
+			loop = 10
+		if cave_inp.lower() == ("light up room"):
+			print("---------------------------------------------------------")
+			print("You would need a torch or lamp to do that.")
+			loop = 10
 	while loop == 11:
 		if loop == 11:
 			print("---------------------------------------------------------")
@@ -104,6 +135,7 @@ while loop == 3:
 			print("Lying half buried in the mud is an old trunk, bulging with jewels. There is an old trunk here, bulging with assorted jewels.")
 			last_inp = raw_input(str("What do you do? "))
 		if last_inp.lower() == ("open trunk"):
+			print("---------------------------------------------------------")
 			print("You have found the Jade Statue and have completed your quest!")
 			exit_inp = raw_input(str("Do you want to continue? Y/N "))
 		if exit_inp.lower() == ("n"):
