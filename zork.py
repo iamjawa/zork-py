@@ -1,3 +1,4 @@
+# Introduction narration of game
 loop = 3
 while loop == 3:
 	print("---------------------------------------------------------")
@@ -7,7 +8,9 @@ while loop == 3:
 	print("(A secret path leads southwest into the forest.)")
 	print("There is a Small Mailbox.")
 
-	first = raw_input(str("What do you do? "))
+
+	# First Screen and Input
+	first = input(str("What do you do? "))
 	if first.lower() == ("take mailbox"):
 		print("---------------------------------------------------------")
 		print("You cannot be serious.")
@@ -38,13 +41,20 @@ while loop == 3:
 		loop = 4
 	if first.lower() == ("go southwest"):
 		loop = 8
+	else:
+		print("---------------------------------------------------------")
+		print("I don't understand that command.")
+		loop = 4
+	
+
+	# First Input Loop
 	while loop == 4:
 		if loop == 4:
 			print("---------------------------------------------------------")
 			print("You are standing in an open field west of a white house, with a boarded front door.")
 			print("(A secret path leads southwest into the forest.)")
 			print("There is a Small Mailbox.")
-			second = raw_input(str("What do you do? "))
+			second = input(str("What do you do? "))
 		if second.lower() == ("take mailbox"):
 			print("---------------------------------------------------------")
 			print("It is securely anchored.")
@@ -77,18 +87,25 @@ while loop == 3:
 			loop = 4
 		if second.lower() == ("go southwest"):
 			loop = 8
+		else:
+			print("---------------------------------------------------------")
+			print("I don't understand that command.")
+			loop = 4
+	
+
+	# Southwest Loop
 	while loop == 8:
 		if loop == 8:
 			print("---------------------------------------------------------")
 			print("This is a forest, with trees in all directions. To the east, there appears to be sunlight.")
-			forest_inp = raw_input(str("What do you do? "))
+			forest_inp = input(str("What do you do? "))
 		if forest_inp.lower() == ("go west"):
 			print("---------------------------------------------------------")
 			print("You would need a machete to go further west.")
 			loop = 8
 		if forest_inp.lower() == ("go north"):
 			print("---------------------------------------------------------")
-			print("The forest becomes inpenetrable to the North.")
+			print("The forest becomes impenetrable to the North.")
 			loop = 8
 		if forest_inp.lower() == ("go south"):
 			print("---------------------------------------------------------")
@@ -96,24 +113,38 @@ while loop == 3:
 			loop = 8
 		if forest_inp.lower() == ("go east"):
 			loop = 9
+		else:
+			print("---------------------------------------------------------")
+			print("I don't understand that command.")
+			loop = 8
+	
+
+	# East Loop and Grating Input
 	while loop == 9:
 		if loop == 9:
 			print("---------------------------------------------------------")
 			print("You are in a clearing, with a forest surrounding you on all sides. A path leads south.")
 			print("There is an open grating, descending into darkness.")
-			grating_inp = raw_input(str("What do you do? "))
+			grating_inp = input(str("What do you do? "))
 		if grating_inp.lower() == ("go south"):
 			print("---------------------------------------------------------")
 			print("You see a large ogre and turn around.")
 			loop = 9
 		if grating_inp.lower() == ("descend grating"):
 			loop = 10
+		else:
+			print("---------------------------------------------------------")
+			print("I don't understand that command.")
+			loop = 9	
+
+
+	# Grating Loop and Cave Input
 	while loop == 10:
 		if loop == 10:
 			print("---------------------------------------------------------")
 			print("You are in a tiny cave with a dark, forbidding staircase leading down.")
 			print("There is a skeleton of a human male in one corner.")
-			cave_inp = raw_input(str("What do you do? "))
+			cave_inp = input(str("What do you do? "))
 		if cave_inp.lower() == ("descend staircase"):
 			loop = 11
 		if cave_inp.lower() == ("take skeleton"):
@@ -128,16 +159,47 @@ while loop == 3:
 			print("---------------------------------------------------------")
 			print("You would need a torch or lamp to do that.")
 			loop = 10
+		if cave_inp.lower() == ("break skeleton"):
+			print("---------------------------------------------------------")
+			print("I have two questions: Why and With What?")
+			loop = 10
+		if cave_inp.lower() == ("go down staircase"):
+			loop = 11
+		if cave_inp.lower() == ("scale staircase"):
+			loop = 11
+		if cave_inp.lower() == ("suicide"):
+			print("---------------------------------------------------------")
+			print("You throw yourself down the staircase as an attempt at suicide. You die.")
+			print("---------------------------------------------------------")
+			suicide_inp = input(str("Do you want to continue? Y/N "))
+			if suicide_inp.lower() == ("n"):
+				import os
+				quit(1)
+			if suicide_inp.lower() == ("y"):
+				loop = 3
+		else:
+			print("---------------------------------------------------------")
+			print("I don't understand that command.")
+			loop = 10
+
+
+	# End of game
 	while loop == 11:
 		if loop == 11:
 			print("---------------------------------------------------------")
 			print("You have entered a mud-floored room.")
 			print("Lying half buried in the mud is an old trunk, bulging with jewels. There is an old trunk here, bulging with assorted jewels.")
-			last_inp = raw_input(str("What do you do? "))
+			last_inp = input(str("What do you do? "))
 		if last_inp.lower() == ("open trunk"):
 			print("---------------------------------------------------------")
 			print("You have found the Jade Statue and have completed your quest!")
-			exit_inp = raw_input(str("Do you want to continue? Y/N "))
+		else:
+			print("---------------------------------------------------------")
+			print("I don't understand that command.")
+			loop = 11
+		
+		# Exit loop at the end of game
+		exit_inp = input(str("Do you want to continue? Y/N "))
 		if exit_inp.lower() == ("n"):
 			import os
 			quit(1)
