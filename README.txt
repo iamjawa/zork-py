@@ -7,6 +7,3 @@ To get started:
 2. If you do not have the latest version of Python installed, please install it from http://www.python.org/download
 3. Open the file named "zork.py"
 4. Have Fun!
-
-
-Copyright (c) 2015 Billy Burrows
