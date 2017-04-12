@@ -174,6 +174,8 @@ while loop == 3:
 				quit(1)
 			if suicide_inp.lower() == ("y"):
 				loop = 3
+		if cave_inp.lower() == ("scale staircase"):
+			loop = 11
 		else:
 			print("---------------------------------------------------------")
 			loop = 10
