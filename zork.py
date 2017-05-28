@@ -186,7 +186,7 @@ while loop == 3:
 		if loop == 11:
 			print("---------------------------------------------------------")
 			print("You have entered a mud-floored room.")
-			print("Lying half buried in the mud is an old trunk, bulging with jewels. There is an old trunk here, bulging with assorted jewels.")
+			print("Lying half buried in the mud is an old trunk, bulging with jewels.")
 			last_inp = input("What do you do? ")
 		if last_inp.lower() == ("open trunk"):
 			print("---------------------------------------------------------")
