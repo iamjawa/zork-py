@@ -1,5 +1,7 @@
 # Zork.py
 
+[![Run on Repl.it](https://repl.it/badge/github/iamjawa/zork-py)](https://repl.it/github/iamjawa/zork-py)
+
 Thank you for downloading a copy of Zork, The PY Edition!
 This Python Program is based loosely on the Storyline of Zork I, and is intended to run and function exactly like the original -
 the only difference being that this version is written with Python and can therefore be run and downloaded for free!
